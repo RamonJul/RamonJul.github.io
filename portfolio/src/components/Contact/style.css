@@ -1,0 +1,47 @@
+#ContactForm{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#info,#OtherSites{
+    list-style: none;
+    padding: 0;
+}
+
+.links{
+
+    display: inline;
+    margin: 0 3%;
+}
+#BasicInfo{
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+
+
+#ContactForm{
+    height: auto;
+    margin: auto;
+    width: 45%;
+}
+
+.form{
+    margin: 0;
+}
+
+#name{
+    margin-top: 5%;
+}
+#message{
+    margin: 5% 0;
+    height: 100%;
+}
+
+#form{
+    margin: auto;
+    margin-bottom: 5%;
+    width: 50%;
+    text-align: center;
+}

@@ -1,6 +1,13 @@
 
 #container{
     display: flex;
+    flex-direction: row;
+    justify-content:  space-around;
     height: auto;
     margin: auto;
+    width: 70%;
+    background-color: #353535;
+}
+.card{
+    flex-wrap: wrap;
 }

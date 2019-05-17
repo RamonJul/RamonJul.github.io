@@ -10,8 +10,8 @@ import './App.css';
 function App() {
   return (
     <Router>
-          <div className="App">
-      <div className="row">
+      < div className="App">
+      <div className="row" id="mainRow">
       <SideBar/>
       <Route exact path="/" component={Home}/>
       <Route exact path="/about" component={About}/>

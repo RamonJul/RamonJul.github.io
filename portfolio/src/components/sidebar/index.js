@@ -13,18 +13,18 @@ class SideBar extends Component{
                         <p href="">Home</p>  
                         </li>
                     </Link>   
-                    <Link to="/about" className={window.location.pathname==="/"?"nav-link active" : "nav-link" }>
+                    <Link to="/about" className={window.location.pathname==="/about"?"nav-link active" : "nav-link" }>
                         <li id="About">
                         <p href="">About</p>  
                         </li>
                     </Link> 
-                    <Link to="/projects" className={window.location.pathname==="/"?"nav-link active" : "nav-link" }>
+                    <Link to="/projects" className={window.location.pathname==="/projects"?"nav-link active" : "nav-link" }>
                     <li>
                         <p href="">Projects</p>
 
                     </li>
                     </Link> 
-                    <Link to="/contact" className={window.location.pathname==="/"?"nav-link active" : "nav-link" }>
+                    <Link to="/contact" className={window.location.pathname==="/contact"?"nav-link active" : "nav-link" }>
                     <li>
                         <p href="">Contact</p> 
                     </li>

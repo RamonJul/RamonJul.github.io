@@ -1,6 +1,16 @@
 
-#Brand{
-    display: flex;
-    height: auto;
+#statement{
+  
     margin: auto;
+}
+#statementHolder,#headshot{
+    margin: 5%;
+}
+#statementHolder{
+    display: flex;
+    
+}
+#headshot{
+    width: 40%;
+  height: 100%;
 }

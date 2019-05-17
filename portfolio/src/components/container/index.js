@@ -1,18 +1,33 @@
 import React,{Component} from 'react';
 import './style.css';
+
 class Container extends Component{
+    location=()=>{
+            if(window.location.pathname==="/projects"){
+                return(
 
-    render(){
-        return(
-      
-                <div id="container">
+                    <div id="container" className="card">
                     {this.props.children}
-                </div>
-           
-  
+                </div>      
 
-        )
+                )
+            }
+            else{
+                return(
+      
+                    <div id="container">
+                        {this.props.children}
+                    </div>
+               
+      
+    
+            )
+            }
 
+    }
+    render(){
+      
+            return(this.location())
     }
 }
 

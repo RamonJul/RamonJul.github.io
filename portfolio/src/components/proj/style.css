@@ -1,0 +1,13 @@
+.project{
+    margin: 10px;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+
+}
+.technology,.links{
+    display: inline;
+}
