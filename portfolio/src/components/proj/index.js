@@ -13,26 +13,30 @@ class ProjectCard extends Component{
     }   
 
    handleClose=()=>{
-       console.log(this)
-        this.setState({show:false},()=>{console.log(this.state)})
+        this.setState({show:false})
     }
     render(){
         return(
           
                 <button className="btn project"  onClick={this.handleShow}>
                 <div className="card " >
-                    <img src={this.props.image} className="card-img-top" alt="..."/>
+                   
                     <div className="card-body">
+                    <img src={this.props.image} className="card-img-top" alt="..."/>
                     <h5 className="card-title">Card title</h5>
                     </div>
                 </div>
-                <Modal show={this.state.show} onHide={this.handleClose}>
-                <Modal.Header closeButton>
+                <div onClick={e => e.stopPropagation()}>
+                <Modal show={this.state.show} onHide={this.handleClose} className="modal">
+                <Modal.Header  className="header">
                          <Modal.Title>Title</Modal.Title>
                 </Modal.Header>   
-                <Modal.Body>
+                <Modal.Body className="modalBody">
                 <img src={this.props.image} className="card-img-top" alt="..."/>
-              
+                <ul className="linkList">
+                    <li className="links"><a href="" className="btn">GitHub</a></li>
+                    <li className="links"><a href="" className="btn">Site</a></li>
+                    </ul>
                 </Modal.Body>
                 <Modal.Footer className='footer'>
                     <p>Description:</p>
@@ -41,13 +45,12 @@ class ProjectCard extends Component{
                     <li className="technology">1</li>
                     <li className="technology">2</li>
                     </ul>
-                    <ul>
-                    <li className="links"><a href="" className="btn">GitHub</a></li>
-                    <li className="links"><a href="" className="btn">Site</a></li>
-                    </ul>
+                    
                 </Modal.Footer>
                
                 </Modal>
+                </div>
+              
                 </button>
         
          

@@ -5,7 +5,7 @@ class SideBar extends Component{
     render(){
 
         return( 
-            <div id="sideBar" className="col-3" > 
+            <div id="sideBar" className="col-2" > 
                 <ul id="options">
 
                      <Link to="/" className={window.location.pathname==="/"?"nav-link active" : "nav-link" }>
