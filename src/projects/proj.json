@@ -1,0 +1,54 @@
+[
+    {
+        "id":1,
+        "name":"Read@",
+        "image":"https://via.placeholder.com/150",
+        "description":"An online forum app catered for developers ",
+        "technologies":["JavaScript","React","React-Router","MySql","Passport"],
+        "Site":"https://fathomless-inlet-59388.herokuapp.com/",
+        "GitHub":"https://github.com/RamonJul/Read-"
+
+    },
+    {
+        "id":2,
+        "name":"Book Search",
+        "image":"https://via.placeholder.com/150",
+        "description":"A book search application that uses the Google API ",
+        "technologies":["JavaScript","React","React-Router","Mongoose","Google Books API"],
+        "Site":"https://fierce-coast-28479.herokuapp.com",
+        "GitHub":"https://github.com/RamonJul/BookSearch"
+    
+    },
+    {
+        "id":3,
+        "name":"Memory Game",
+        "image":"https://via.placeholder.com/150",
+        "description":"A memory card game with a Lord of the Rings theme",
+        "technologies":["JavaScript","React"],
+        "Site":"https://ramonjul.github.io/Clicky/",
+        "GitHub":"https://github.com/RamonJul/Clicky"
+    
+    },
+
+    {
+        "id":4,
+        "name":"Event Search",
+        "image":"https://via.placeholder.com/150",
+        "description":"An event search app displaying ticket prices in the currency of their choice",
+        "technologies":["JavaScript","HTML5","Firebase","TicketMaster Api","Flexdatalist"],
+        "Site":":https://ramonjul.github.io/Event-Search/",
+        "GitHub":"https://github.com/RamonJul/Event-Search"
+    
+    },
+    {
+        "id":5,
+        "name":"Gif Search",
+        "image":"https://via.placeholder.com/150",
+        "description":"A GIF search app.",
+        "technologies":["JavaScript","HTML5","Giphy Api"],
+        "Site":"https://ramonjul.github.io/GifTastic/",
+        "GitHub":"https://github.com/RamonJul/GifTastic"
+    }
+
+
+]

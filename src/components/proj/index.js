@@ -23,27 +23,29 @@ class ProjectCard extends Component{
                    
                     <div className="card-body">
                     <img src={this.props.image} className="card-img-top" alt="..."/>
-                    <h5 className="card-title">Card title</h5>
+                    <h5 className="card-title">{this.props.name}</h5>
                     </div>
                 </div>
                 <div onClick={e => e.stopPropagation()}>
                 <Modal show={this.state.show} onHide={this.handleClose} className="modal">
                 <Modal.Header  className="header">
-                         <Modal.Title>Title</Modal.Title>
+                         <Modal.Title>{this.props.name}</Modal.Title>
                 </Modal.Header>   
                 <Modal.Body className="modalBody">
                 <img src={this.props.image} className="card-img-top" alt="..."/>
                 <ul className="linkList">
-                    <li className="links"><a href="" className="btn">GitHub</a></li>
-                    <li className="links"><a href="" className="btn">Site</a></li>
+                    <li className="links"><a  href={this.props.GitHub} className="btn">GitHub</a></li>
+                    <li className="links"><a href={this.props.Site} className="btn">Site</a></li>
                     </ul>
                 </Modal.Body>
                 <Modal.Footer className='footer'>
-                    <p>Description:</p>
+                    <p className="description">{this.props.description}</p>
                     <p>Technologies:</p>
+                
                     <ul className="technologies">
-                    <li className="technology">1</li>
-                    <li className="technology">2</li>
+                    {this.props.technologies.map(element=>(
+                            <li className="technology">{element}</li>
+                    ))}
                     </ul>
                     
                 </Modal.Footer>

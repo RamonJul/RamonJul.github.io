@@ -12,7 +12,15 @@ class Proj extends Component{
             <Main>
                 <Container>
                 {Projects.map(element=>(
-                        <Card key={element.id}image={element.image}  id={element.id}/>
+                        <Card
+                         key={element.id} 
+                         name={element.name}
+                         image={element.image} 
+                         description={element.description}
+                         technologies={element.technologies} 
+                         Site={element.Site}
+                         GitHub={element.GitHub}
+                         />
                     ))}
                 </Container>
            
